@@ -16,7 +16,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -v -o helloworld
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
 FROM alpine:3.9
 # RUN apk add --no-cache ca-certificates
-
+RUN apk add  tzdata
+ENV TZ=Asia/Shanghai
 # Copy the binary to the production image from the builder stage.
 COPY --from=builder /go/src/github.com/knative-sample/helloworld/helloworld /helloworld
 
