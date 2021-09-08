@@ -15,7 +15,7 @@ spec:
     - name: pathToYamlFile
       value: "knative/helloworld-go.yaml"
     - name: imageUrl
-      value: "registry.cn-hangzhou.aliyuncs.com/knative-sample/tekton-knative-helloworld"
+      value: "docker.io/yyc266/tekton"
     - name: imageTag
       value: "1.0"
-  serviceAccount: pipeline-account
+  serviceAccountName: pipeline-account

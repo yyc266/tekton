@@ -25,7 +25,7 @@ spec:
         - "s;__IMAGE__;$(inputs.params.imageUrl):$(inputs.params.imageTag);g"
         - "/workspace/git-source/$(inputs.params.pathToYamlFile)"
     - name: run-kubectl
-      image: registry.cn-hangzhou.aliyuncs.com/knative-sample/kubectl:v0.5.0
+      image: kubesphere/kubectl:v1.19.1
       command: ["kubectl"]
       args:
         - "apply"
