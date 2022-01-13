@@ -8,4 +8,4 @@ spec:
     - name: revision
       value: b1.0
     - name: url
-      value: https://github.com/knative-sample/tekton-knative
+      value: https://github.com/yyc266/tekton
